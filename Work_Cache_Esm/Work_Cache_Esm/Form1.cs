@@ -70,13 +70,13 @@ namespace Work_Cache_Esm
         public Form1()
         {
             InitializeComponent();
-            CountPages = Convert.ToInt32(textBox_Page.Text);
-            CountLines = Convert.ToInt32(textBox_String.Text);
-            CountElements = Convert.ToInt32(textBox_Items.Text);
+            CountPages = 10;
+            CountLines = 10;
+            CountElements = 4;
             controller = new Control(CountPages, CountLines, CountElements, "MainMemory");
             label_WhereFrom.Text = "Ни один элемент пока не был загружен";
             label_WhereFrom.ForeColor = Color.Black;
-            button_Create.Enabled = false;
+          
             WriteToTextBox_OP();
             WriteToTextBox_Cache();
             textBox_OP.ReadOnly = true;
@@ -87,6 +87,35 @@ namespace Work_Cache_Esm
         {
 
         }
+
+        private void Label_WhereFrom_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label_Adress_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label_CACHE_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label_Page_Click(object sender, EventArgs e)
+        {
+                    }
 
         private void Button_Search_Click_1(object sender, EventArgs e)
         {
